@@ -1,0 +1,1525 @@
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', devices='0,1', enc_mri='resnet18', f_dim=128, finetune=True, gpu=0, l_dim=2, learning_rate=1e-05, model='CAA', num_folds=5, num_workers=1, patience=4, pretrain=True, root_dir='/data/yuguoqi/dataset/abide', temperature=1.0, train_epochs=24, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Number of parameters: 11.66M
+>>>>>>>start training : enc_mri_resnet18_f_dim_128_temperature_1.0_pretrain_True_finetune_True>>>>>>>>>>>>>>>>>>>>>>>>>>
+Fold 1/5
+Epoch: 1, | Train Loss: 0.258 Vali Loss: 0.240
+Epoch: 1, | Train Acc: 0.4710 Vali Acc: 0.6286
+Validation loss decreased (inf --> 0.239755).  Saving model ...
+Epoch: 2, | Train Loss: 0.200 Vali Loss: 0.235
+Epoch: 2, | Train Acc: 0.8116 Vali Acc: 0.6571
+Validation loss decreased (0.239755 --> 0.235310).  Saving model ...
+Epoch: 3, | Train Loss: 0.134 Vali Loss: 0.228
+Epoch: 3, | Train Acc: 0.9710 Vali Acc: 0.6000
+Validation loss decreased (0.235310 --> 0.227709).  Saving model ...
+Epoch: 4, | Train Loss: 0.089 Vali Loss: 0.238
+Epoch: 4, | Train Acc: 1.0000 Vali Acc: 0.6286
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.054 Vali Loss: 0.238
+Epoch: 5, | Train Acc: 1.0000 Vali Acc: 0.6571
+EarlyStopping counter: 2 out of 4
+Epoch: 6, | Train Loss: 0.044 Vali Loss: 0.275
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 0.6857
+EarlyStopping counter: 3 out of 4
+Epoch: 7, | Train Loss: 0.043 Vali Loss: 0.234
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 0.5714
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            1           12
+True 1            2           20
+
+Accuracy:0.600000
+acc_clas_0:0.076923
+acc_clas_1:0.909091
+Fold 2/5
+Epoch: 1, | Train Loss: 0.170 Vali Loss: 0.231
+Epoch: 1, | Train Acc: 0.8261 Vali Acc: 0.7143
+Validation loss decreased (inf --> 0.231170).  Saving model ...
+Epoch: 2, | Train Loss: 0.173 Vali Loss: 0.325
+Epoch: 2, | Train Acc: 0.7971 Vali Acc: 0.4857
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.136 Vali Loss: 0.255
+Epoch: 3, | Train Acc: 0.9203 Vali Acc: 0.5714
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.076 Vali Loss: 0.164
+Epoch: 4, | Train Acc: 0.9783 Vali Acc: 0.9143
+Validation loss decreased (0.231170 --> 0.164309).  Saving model ...
+Epoch: 5, | Train Loss: 0.038 Vali Loss: 0.208
+Epoch: 5, | Train Acc: 1.0000 Vali Acc: 0.6571
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.019 Vali Loss: 0.098
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 0.9429
+Validation loss decreased (0.164309 --> 0.097869).  Saving model ...
+Epoch: 7, | Train Loss: 0.017 Vali Loss: 0.138
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 0.7143
+EarlyStopping counter: 1 out of 4
+Epoch: 8, | Train Loss: 0.011 Vali Loss: 0.094
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 0.9429
+Validation loss decreased (0.097869 --> 0.094351).  Saving model ...
+Epoch: 9, | Train Loss: 0.008 Vali Loss: 0.112
+Epoch: 9, | Train Acc: 1.0000 Vali Acc: 0.8857
+EarlyStopping counter: 1 out of 4
+Epoch: 10, | Train Loss: 0.011 Vali Loss: 0.098
+Epoch: 10, | Train Acc: 1.0000 Vali Acc: 0.9143
+EarlyStopping counter: 2 out of 4
+Epoch: 11, | Train Loss: 0.007 Vali Loss: 0.108
+Epoch: 11, | Train Acc: 1.0000 Vali Acc: 0.8000
+EarlyStopping counter: 3 out of 4
+Epoch: 12, | Train Loss: 0.008 Vali Loss: 0.101
+Epoch: 12, | Train Acc: 1.0000 Vali Acc: 0.8571
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           15            2
+True 1            0           18
+
+Accuracy:0.942857
+acc_clas_0:0.882353
+acc_clas_1:1.000000
+Fold 3/5
+Epoch: 1, | Train Loss: 0.043 Vali Loss: 0.094
+Epoch: 1, | Train Acc: 0.9565 Vali Acc: 0.8857
+Validation loss decreased (inf --> 0.093980).  Saving model ...
+Epoch: 2, | Train Loss: 0.023 Vali Loss: 0.059
+Epoch: 2, | Train Acc: 1.0000 Vali Acc: 0.9143
+Validation loss decreased (0.093980 --> 0.059300).  Saving model ...
+Epoch: 3, | Train Loss: 0.014 Vali Loss: 0.014
+Epoch: 3, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.059300 --> 0.014236).  Saving model ...
+Epoch: 4, | Train Loss: 0.020 Vali Loss: 0.006
+Epoch: 4, | Train Acc: 0.9928 Vali Acc: 1.0000
+Validation loss decreased (0.014236 --> 0.005547).  Saving model ...
+Epoch: 5, | Train Loss: 0.018 Vali Loss: 0.043
+Epoch: 5, | Train Acc: 0.9855 Vali Acc: 0.9714
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.006 Vali Loss: 0.038
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.005 Vali Loss: 0.091
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 0.8571
+EarlyStopping counter: 3 out of 4
+Epoch: 8, | Train Loss: 0.003 Vali Loss: 0.012
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           18            0
+True 1            0           17
+
+Accuracy:1.000000
+acc_clas_0:1.000000
+acc_clas_1:1.000000
+Fold 4/5
+Epoch: 1, | Train Loss: 0.005 Vali Loss: 0.081
+Epoch: 1, | Train Acc: 1.0000 Vali Acc: 0.7941
+Validation loss decreased (inf --> 0.081401).  Saving model ...
+Epoch: 2, | Train Loss: 0.011 Vali Loss: 0.009
+Epoch: 2, | Train Acc: 0.9856 Vali Acc: 1.0000
+Validation loss decreased (0.081401 --> 0.009374).  Saving model ...
+Epoch: 3, | Train Loss: 0.005 Vali Loss: 0.099
+Epoch: 3, | Train Acc: 1.0000 Vali Acc: 0.7059
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.002 Vali Loss: 0.009
+Epoch: 4, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.009374 --> 0.008606).  Saving model ...
+Epoch: 5, | Train Loss: 0.004 Vali Loss: 0.002
+Epoch: 5, | Train Acc: 0.9928 Vali Acc: 1.0000
+Validation loss decreased (0.008606 --> 0.002426).  Saving model ...
+Epoch: 6, | Train Loss: 0.002 Vali Loss: 0.004
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.005 Vali Loss: 0.039
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.003 Vali Loss: 0.415
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 0.3529
+EarlyStopping counter: 3 out of 4
+Epoch: 9, | Train Loss: 0.011 Vali Loss: 0.368
+Epoch: 9, | Train Acc: 0.9928 Vali Acc: 0.3529
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           12            0
+True 1            0           22
+
+Accuracy:1.000000
+acc_clas_0:1.000000
+acc_clas_1:1.000000
+Fold 5/5
+Epoch: 1, | Train Loss: 0.002 Vali Loss: 0.186
+Epoch: 1, | Train Acc: 1.0000 Vali Acc: 0.6471
+Validation loss decreased (inf --> 0.186115).  Saving model ...
+Epoch: 2, | Train Loss: 0.001 Vali Loss: 0.016
+Epoch: 2, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.186115 --> 0.015562).  Saving model ...
+Epoch: 3, | Train Loss: 0.007 Vali Loss: 0.018
+Epoch: 3, | Train Acc: 0.9928 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.003 Vali Loss: 0.042
+Epoch: 4, | Train Acc: 1.0000 Vali Acc: 0.9706
+EarlyStopping counter: 2 out of 4
+Epoch: 5, | Train Loss: 0.001 Vali Loss: 0.002
+Epoch: 5, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.015562 --> 0.002225).  Saving model ...
+Epoch: 6, | Train Loss: 0.004 Vali Loss: 0.024
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.001 Vali Loss: 0.003
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.002 Vali Loss: 0.004
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 3 out of 4
+Epoch: 9, | Train Loss: 0.002 Vali Loss: 0.010
+Epoch: 9, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           15            0
+True 1            0           19
+
+Accuracy:1.000000
+acc_clas_0:1.000000
+acc_clas_1:1.000000
+total avg vali acc:0.908571  total avg vali acc_clas_0: 0.791855  total avg vali acc_clas_1: 0.981818
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', devices='0,1', enc_mri='resnet18', f_dim=128, finetune=False, gpu=0, l_dim=2, learning_rate=1e-05, model='CAA', num_folds=5, num_workers=1, patience=4, pretrain=True, root_dir='/data/yuguoqi/dataset/abide', temperature=1.0, train_epochs=24, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Number of parameters: 11.66M
+>>>>>>>start training : enc_mri_resnet18_f_dim_128_temperature_1.0_pretrain_True_finetune_False>>>>>>>>>>>>>>>>>>>>>>>>>>
+Fold 1/5
+Epoch: 1, | Train Loss: 0.247 Vali Loss: 0.260
+Epoch: 1, | Train Acc: 0.5580 Vali Acc: 0.5143
+Validation loss decreased (inf --> 0.259572).  Saving model ...
+Epoch: 2, | Train Loss: 0.206 Vali Loss: 0.261
+Epoch: 2, | Train Acc: 0.6739 Vali Acc: 0.5714
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.167 Vali Loss: 0.262
+Epoch: 3, | Train Acc: 0.8986 Vali Acc: 0.6000
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.134 Vali Loss: 0.241
+Epoch: 4, | Train Acc: 0.9855 Vali Acc: 0.5429
+Validation loss decreased (0.259572 --> 0.241181).  Saving model ...
+Epoch: 5, | Train Loss: 0.125 Vali Loss: 0.273
+Epoch: 5, | Train Acc: 0.9710 Vali Acc: 0.5429
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.100 Vali Loss: 0.253
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 0.5143
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.090 Vali Loss: 0.263
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 0.4571
+EarlyStopping counter: 3 out of 4
+Epoch: 8, | Train Loss: 0.081 Vali Loss: 0.264
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 0.4000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            5           11
+True 1            5           14
+
+Accuracy:0.542857
+acc_clas_0:0.312500
+acc_clas_1:0.736842
+Fold 2/5
+Epoch: 1, | Train Loss: 0.179 Vali Loss: 0.211
+Epoch: 1, | Train Acc: 0.8406 Vali Acc: 0.8286
+Validation loss decreased (inf --> 0.210594).  Saving model ...
+Epoch: 2, | Train Loss: 0.165 Vali Loss: 0.245
+Epoch: 2, | Train Acc: 0.8623 Vali Acc: 0.6286
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.142 Vali Loss: 0.166
+Epoch: 3, | Train Acc: 0.9493 Vali Acc: 1.0000
+Validation loss decreased (0.210594 --> 0.165776).  Saving model ...
+Epoch: 4, | Train Loss: 0.120 Vali Loss: 0.188
+Epoch: 4, | Train Acc: 0.9710 Vali Acc: 0.8571
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.098 Vali Loss: 0.214
+Epoch: 5, | Train Acc: 0.9928 Vali Acc: 0.7429
+EarlyStopping counter: 2 out of 4
+Epoch: 6, | Train Loss: 0.091 Vali Loss: 0.166
+Epoch: 6, | Train Acc: 0.9928 Vali Acc: 0.9143
+EarlyStopping counter: 3 out of 4
+Epoch: 7, | Train Loss: 0.077 Vali Loss: 0.139
+Epoch: 7, | Train Acc: 0.9928 Vali Acc: 0.9714
+Validation loss decreased (0.165776 --> 0.138798).  Saving model ...
+Epoch: 8, | Train Loss: 0.058 Vali Loss: 0.166
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 0.9429
+EarlyStopping counter: 1 out of 4
+Epoch: 9, | Train Loss: 0.055 Vali Loss: 0.172
+Epoch: 9, | Train Acc: 1.0000 Vali Acc: 0.9714
+EarlyStopping counter: 2 out of 4
+Epoch: 10, | Train Loss: 0.054 Vali Loss: 0.153
+Epoch: 10, | Train Acc: 1.0000 Vali Acc: 0.9714
+EarlyStopping counter: 3 out of 4
+Epoch: 11, | Train Loss: 0.053 Vali Loss: 0.163
+Epoch: 11, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           15            1
+True 1            0           19
+
+Accuracy:0.971429
+acc_clas_0:0.937500
+acc_clas_1:1.000000
+Fold 3/5
+Epoch: 1, | Train Loss: 0.096 Vali Loss: 0.207
+Epoch: 1, | Train Acc: 0.9638 Vali Acc: 0.8286
+Validation loss decreased (inf --> 0.206905).  Saving model ...
+Epoch: 2, | Train Loss: 0.083 Vali Loss: 0.114
+Epoch: 2, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.206905 --> 0.113730).  Saving model ...
+Epoch: 3, | Train Loss: 0.068 Vali Loss: 0.106
+Epoch: 3, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.113730 --> 0.105969).  Saving model ...
+Epoch: 4, | Train Loss: 0.059 Vali Loss: 0.089
+Epoch: 4, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.105969 --> 0.089082).  Saving model ...
+Epoch: 5, | Train Loss: 0.060 Vali Loss: 0.115
+Epoch: 5, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.047 Vali Loss: 0.088
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.089082 --> 0.088198).  Saving model ...
+Epoch: 7, | Train Loss: 0.038 Vali Loss: 0.091
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 8, | Train Loss: 0.046 Vali Loss: 0.079
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.088198 --> 0.079067).  Saving model ...
+Epoch: 9, | Train Loss: 0.035 Vali Loss: 0.106
+Epoch: 9, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 10, | Train Loss: 0.031 Vali Loss: 0.104
+Epoch: 10, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 2 out of 4
+Epoch: 11, | Train Loss: 0.026 Vali Loss: 0.088
+Epoch: 11, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 3 out of 4
+Epoch: 12, | Train Loss: 0.029 Vali Loss: 0.080
+Epoch: 12, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           15            0
+True 1            0           20
+
+Accuracy:1.000000
+acc_clas_0:1.000000
+acc_clas_1:1.000000
+Fold 4/5
+Epoch: 1, | Train Loss: 0.070 Vali Loss: 0.145
+Epoch: 1, | Train Acc: 0.9928 Vali Acc: 0.9706
+Validation loss decreased (inf --> 0.145477).  Saving model ...
+Epoch: 2, | Train Loss: 0.055 Vali Loss: 0.070
+Epoch: 2, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.145477 --> 0.069817).  Saving model ...
+Epoch: 3, | Train Loss: 0.045 Vali Loss: 0.113
+Epoch: 3, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.035 Vali Loss: 0.044
+Epoch: 4, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.069817 --> 0.044475).  Saving model ...
+Epoch: 5, | Train Loss: 0.033 Vali Loss: 0.033
+Epoch: 5, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.044475 --> 0.032663).  Saving model ...
+Epoch: 6, | Train Loss: 0.026 Vali Loss: 0.056
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.032 Vali Loss: 0.035
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.023 Vali Loss: 0.042
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 3 out of 4
+Epoch: 9, | Train Loss: 0.022 Vali Loss: 0.035
+Epoch: 9, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           15            0
+True 1            0           19
+
+Accuracy:1.000000
+acc_clas_0:1.000000
+acc_clas_1:1.000000
+Fold 5/5
+Epoch: 1, | Train Loss: 0.040 Vali Loss: 0.143
+Epoch: 1, | Train Acc: 1.0000 Vali Acc: 0.9706
+Validation loss decreased (inf --> 0.143209).  Saving model ...
+Epoch: 2, | Train Loss: 0.042 Vali Loss: 0.035
+Epoch: 2, | Train Acc: 1.0000 Vali Acc: 1.0000
+Validation loss decreased (0.143209 --> 0.034744).  Saving model ...
+Epoch: 3, | Train Loss: 0.030 Vali Loss: 0.093
+Epoch: 3, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.030 Vali Loss: 0.061
+Epoch: 4, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 2 out of 4
+Epoch: 5, | Train Loss: 0.026 Vali Loss: 0.131
+Epoch: 5, | Train Acc: 1.0000 Vali Acc: 0.9706
+EarlyStopping counter: 3 out of 4
+Epoch: 6, | Train Loss: 0.018 Vali Loss: 0.078
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 1.0000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           13            0
+True 1            0           21
+
+Accuracy:1.000000
+acc_clas_0:1.000000
+acc_clas_1:1.000000
+total avg vali acc:0.902857  total avg vali acc_clas_0: 0.850000  total avg vali acc_clas_1: 0.947368
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', devices='0,1', enc_mri='resnet18', f_dim=128, finetune=True, gpu=0, l_dim=2, learning_rate=1e-05, model='CAA', num_folds=5, num_workers=1, patience=4, pretrain=False, root_dir='/data/yuguoqi/dataset/abide', temperature=1.0, train_epochs=24, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Number of parameters: 11.66M
+>>>>>>>start training : enc_mri_resnet18_f_dim_128_temperature_1.0_pretrain_False_finetune_True>>>>>>>>>>>>>>>>>>>>>>>>>>
+Fold 1/5
+Epoch: 1, | Train Loss: 0.247 Vali Loss: 0.246
+Epoch: 1, | Train Acc: 0.5580 Vali Acc: 0.5143
+Validation loss decreased (inf --> 0.246426).  Saving model ...
+Epoch: 2, | Train Loss: 0.239 Vali Loss: 0.373
+Epoch: 2, | Train Acc: 0.5870 Vali Acc: 0.3429
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.243 Vali Loss: 0.206
+Epoch: 3, | Train Acc: 0.5652 Vali Acc: 0.6286
+Validation loss decreased (0.246426 --> 0.205833).  Saving model ...
+Epoch: 4, | Train Loss: 0.229 Vali Loss: 0.269
+Epoch: 4, | Train Acc: 0.5870 Vali Acc: 0.6000
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.231 Vali Loss: 0.298
+Epoch: 5, | Train Acc: 0.6014 Vali Acc: 0.6000
+EarlyStopping counter: 2 out of 4
+Epoch: 6, | Train Loss: 0.225 Vali Loss: 0.283
+Epoch: 6, | Train Acc: 0.6449 Vali Acc: 0.3429
+EarlyStopping counter: 3 out of 4
+Epoch: 7, | Train Loss: 0.223 Vali Loss: 0.242
+Epoch: 7, | Train Acc: 0.6159 Vali Acc: 0.6000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           12
+True 1            1           22
+
+Accuracy:0.628571
+acc_clas_0:0.000000
+acc_clas_1:0.956522
+Fold 2/5
+Epoch: 1, | Train Loss: 0.246 Vali Loss: 0.236
+Epoch: 1, | Train Acc: 0.5652 Vali Acc: 0.6000
+Validation loss decreased (inf --> 0.236106).  Saving model ...
+Epoch: 2, | Train Loss: 0.238 Vali Loss: 0.240
+Epoch: 2, | Train Acc: 0.5797 Vali Acc: 0.5714
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.232 Vali Loss: 0.243
+Epoch: 3, | Train Acc: 0.6014 Vali Acc: 0.6000
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.224 Vali Loss: 0.237
+Epoch: 4, | Train Acc: 0.6014 Vali Acc: 0.6286
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.217 Vali Loss: 0.233
+Epoch: 5, | Train Acc: 0.6377 Vali Acc: 0.6000
+Validation loss decreased (0.236106 --> 0.232847).  Saving model ...
+Epoch: 6, | Train Loss: 0.214 Vali Loss: 0.227
+Epoch: 6, | Train Acc: 0.6449 Vali Acc: 0.6286
+Validation loss decreased (0.232847 --> 0.226615).  Saving model ...
+Epoch: 7, | Train Loss: 0.207 Vali Loss: 0.236
+Epoch: 7, | Train Acc: 0.6812 Vali Acc: 0.6000
+EarlyStopping counter: 1 out of 4
+Epoch: 8, | Train Loss: 0.203 Vali Loss: 0.254
+Epoch: 8, | Train Acc: 0.6884 Vali Acc: 0.6000
+EarlyStopping counter: 2 out of 4
+Epoch: 9, | Train Loss: 0.189 Vali Loss: 0.246
+Epoch: 9, | Train Acc: 0.7899 Vali Acc: 0.5714
+EarlyStopping counter: 3 out of 4
+Epoch: 10, | Train Loss: 0.182 Vali Loss: 0.220
+Epoch: 10, | Train Acc: 0.8333 Vali Acc: 0.6000
+Validation loss decreased (0.226615 --> 0.219777).  Saving model ...
+Epoch: 11, | Train Loss: 0.172 Vali Loss: 0.194
+Epoch: 11, | Train Acc: 0.8551 Vali Acc: 0.6286
+Validation loss decreased (0.219777 --> 0.194394).  Saving model ...
+Epoch: 12, | Train Loss: 0.156 Vali Loss: 0.240
+Epoch: 12, | Train Acc: 0.8768 Vali Acc: 0.6571
+EarlyStopping counter: 1 out of 4
+Epoch: 13, | Train Loss: 0.131 Vali Loss: 0.214
+Epoch: 13, | Train Acc: 0.9275 Vali Acc: 0.7143
+EarlyStopping counter: 2 out of 4
+Epoch: 14, | Train Loss: 0.107 Vali Loss: 0.223
+Epoch: 14, | Train Acc: 0.9638 Vali Acc: 0.7429
+EarlyStopping counter: 3 out of 4
+Epoch: 15, | Train Loss: 0.092 Vali Loss: 0.199
+Epoch: 15, | Train Acc: 0.9855 Vali Acc: 0.6000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            2           13
+True 1            0           20
+
+Accuracy:0.628571
+acc_clas_0:0.133333
+acc_clas_1:1.000000
+Fold 3/5
+Epoch: 1, | Train Loss: 0.176 Vali Loss: 0.172
+Epoch: 1, | Train Acc: 0.7971 Vali Acc: 0.9143
+Validation loss decreased (inf --> 0.171540).  Saving model ...
+Epoch: 2, | Train Loss: 0.156 Vali Loss: 0.223
+Epoch: 2, | Train Acc: 0.8768 Vali Acc: 0.5429
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.144 Vali Loss: 0.234
+Epoch: 3, | Train Acc: 0.8623 Vali Acc: 0.6000
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.135 Vali Loss: 0.189
+Epoch: 4, | Train Acc: 0.9058 Vali Acc: 0.7429
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.104 Vali Loss: 0.153
+Epoch: 5, | Train Acc: 0.9638 Vali Acc: 0.9143
+Validation loss decreased (0.171540 --> 0.152821).  Saving model ...
+Epoch: 6, | Train Loss: 0.082 Vali Loss: 0.198
+Epoch: 6, | Train Acc: 0.9783 Vali Acc: 0.6857
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.070 Vali Loss: 0.195
+Epoch: 7, | Train Acc: 0.9928 Vali Acc: 0.6571
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.065 Vali Loss: 0.113
+Epoch: 8, | Train Acc: 0.9928 Vali Acc: 0.9714
+Validation loss decreased (0.152821 --> 0.112980).  Saving model ...
+Epoch: 9, | Train Loss: 0.036 Vali Loss: 0.225
+Epoch: 9, | Train Acc: 1.0000 Vali Acc: 0.6857
+EarlyStopping counter: 1 out of 4
+Epoch: 10, | Train Loss: 0.028 Vali Loss: 0.113
+Epoch: 10, | Train Acc: 1.0000 Vali Acc: 0.8857
+EarlyStopping counter: 2 out of 4
+Epoch: 11, | Train Loss: 0.021 Vali Loss: 0.085
+Epoch: 11, | Train Acc: 1.0000 Vali Acc: 0.9429
+Validation loss decreased (0.112980 --> 0.085149).  Saving model ...
+Epoch: 12, | Train Loss: 0.011 Vali Loss: 0.241
+Epoch: 12, | Train Acc: 1.0000 Vali Acc: 0.6286
+EarlyStopping counter: 1 out of 4
+Epoch: 13, | Train Loss: 0.012 Vali Loss: 0.044
+Epoch: 13, | Train Acc: 1.0000 Vali Acc: 0.9714
+Validation loss decreased (0.085149 --> 0.044012).  Saving model ...
+Epoch: 14, | Train Loss: 0.031 Vali Loss: 0.155
+Epoch: 14, | Train Acc: 0.9783 Vali Acc: 0.8286
+EarlyStopping counter: 1 out of 4
+Epoch: 15, | Train Loss: 0.021 Vali Loss: 0.088
+Epoch: 15, | Train Acc: 0.9928 Vali Acc: 0.8286
+EarlyStopping counter: 2 out of 4
+Epoch: 16, | Train Loss: 0.014 Vali Loss: 0.134
+Epoch: 16, | Train Acc: 0.9928 Vali Acc: 0.8571
+EarlyStopping counter: 3 out of 4
+Epoch: 17, | Train Loss: 0.009 Vali Loss: 0.233
+Epoch: 17, | Train Acc: 1.0000 Vali Acc: 0.6571
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           18            0
+True 1            1           16
+
+Accuracy:0.971429
+acc_clas_0:1.000000
+acc_clas_1:0.941176
+Fold 4/5
+Epoch: 1, | Train Loss: 0.059 Vali Loss: 0.243
+Epoch: 1, | Train Acc: 0.9712 Vali Acc: 0.5882
+Validation loss decreased (inf --> 0.243372).  Saving model ...
+Epoch: 2, | Train Loss: 0.025 Vali Loss: 0.369
+Epoch: 2, | Train Acc: 1.0000 Vali Acc: 0.5882
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.015 Vali Loss: 0.100
+Epoch: 3, | Train Acc: 1.0000 Vali Acc: 0.8824
+Validation loss decreased (0.243372 --> 0.099998).  Saving model ...
+Epoch: 4, | Train Loss: 0.007 Vali Loss: 0.247
+Epoch: 4, | Train Acc: 1.0000 Vali Acc: 0.6176
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.014 Vali Loss: 0.005
+Epoch: 5, | Train Acc: 0.9928 Vali Acc: 1.0000
+Validation loss decreased (0.099998 --> 0.004830).  Saving model ...
+Epoch: 6, | Train Loss: 0.004 Vali Loss: 0.030
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 0.9706
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.004 Vali Loss: 0.137
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 0.7059
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.010 Vali Loss: 0.054
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 0.9706
+EarlyStopping counter: 3 out of 4
+Epoch: 9, | Train Loss: 0.024 Vali Loss: 0.213
+Epoch: 9, | Train Acc: 0.9784 Vali Acc: 0.5882
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           15            0
+True 1            0           19
+
+Accuracy:1.000000
+acc_clas_0:1.000000
+acc_clas_1:1.000000
+Fold 5/5
+Epoch: 1, | Train Loss: 0.012 Vali Loss: 0.328
+Epoch: 1, | Train Acc: 0.9928 Vali Acc: 0.6176
+Validation loss decreased (inf --> 0.328015).  Saving model ...
+Epoch: 2, | Train Loss: 0.018 Vali Loss: 0.296
+Epoch: 2, | Train Acc: 0.9856 Vali Acc: 0.5882
+Validation loss decreased (0.328015 --> 0.295765).  Saving model ...
+Epoch: 3, | Train Loss: 0.007 Vali Loss: 0.215
+Epoch: 3, | Train Acc: 1.0000 Vali Acc: 0.5588
+Validation loss decreased (0.295765 --> 0.215305).  Saving model ...
+Epoch: 4, | Train Loss: 0.009 Vali Loss: 0.292
+Epoch: 4, | Train Acc: 1.0000 Vali Acc: 0.5000
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.015 Vali Loss: 0.180
+Epoch: 5, | Train Acc: 0.9928 Vali Acc: 0.7353
+Validation loss decreased (0.215305 --> 0.180371).  Saving model ...
+Epoch: 6, | Train Loss: 0.004 Vali Loss: 0.214
+Epoch: 6, | Train Acc: 1.0000 Vali Acc: 0.6765
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.002 Vali Loss: 0.470
+Epoch: 7, | Train Acc: 1.0000 Vali Acc: 0.6176
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.004 Vali Loss: 0.191
+Epoch: 8, | Train Acc: 1.0000 Vali Acc: 0.6176
+EarlyStopping counter: 3 out of 4
+Epoch: 9, | Train Loss: 0.003 Vali Loss: 0.111
+Epoch: 9, | Train Acc: 1.0000 Vali Acc: 0.7941
+Validation loss decreased (0.180371 --> 0.110914).  Saving model ...
+Epoch: 10, | Train Loss: 0.003 Vali Loss: 0.066
+Epoch: 10, | Train Acc: 1.0000 Vali Acc: 0.9706
+Validation loss decreased (0.110914 --> 0.065819).  Saving model ...
+Epoch: 11, | Train Loss: 0.005 Vali Loss: 0.367
+Epoch: 11, | Train Acc: 1.0000 Vali Acc: 0.6176
+EarlyStopping counter: 1 out of 4
+Epoch: 12, | Train Loss: 0.006 Vali Loss: 0.045
+Epoch: 12, | Train Acc: 0.9928 Vali Acc: 0.9706
+Validation loss decreased (0.065819 --> 0.044957).  Saving model ...
+Epoch: 13, | Train Loss: 0.002 Vali Loss: 0.437
+Epoch: 13, | Train Acc: 1.0000 Vali Acc: 0.4706
+EarlyStopping counter: 1 out of 4
+Epoch: 14, | Train Loss: 0.004 Vali Loss: 0.413
+Epoch: 14, | Train Acc: 1.0000 Vali Acc: 0.5588
+EarlyStopping counter: 2 out of 4
+Epoch: 15, | Train Loss: 0.005 Vali Loss: 0.234
+Epoch: 15, | Train Acc: 1.0000 Vali Acc: 0.7059
+EarlyStopping counter: 3 out of 4
+Epoch: 16, | Train Loss: 0.004 Vali Loss: 0.199
+Epoch: 16, | Train Acc: 1.0000 Vali Acc: 0.7647
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           14            1
+True 1            0           19
+
+Accuracy:0.970588
+acc_clas_0:0.933333
+acc_clas_1:1.000000
+total avg vali acc:0.839832  total avg vali acc_clas_0: 0.613333  total avg vali acc_clas_1: 0.979540
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', devices='0,1', enc_mri='resnet18', f_dim=128, finetune=False, gpu=0, l_dim=2, learning_rate=1e-05, model='CAA', num_folds=5, num_workers=1, patience=4, pretrain=False, root_dir='/data/yuguoqi/dataset/abide', temperature=1.0, train_epochs=24, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Number of parameters: 11.66M
+>>>>>>>start training : enc_mri_resnet18_f_dim_128_temperature_1.0_pretrain_False_finetune_False>>>>>>>>>>>>>>>>>>>>>>>>>>
+Fold 1/5
+Epoch: 1, | Train Loss: 0.245 Vali Loss: 0.256
+Epoch: 1, | Train Acc: 0.6159 Vali Acc: 0.3429
+Validation loss decreased (inf --> 0.255722).  Saving model ...
+Epoch: 2, | Train Loss: 0.240 Vali Loss: 0.304
+Epoch: 2, | Train Acc: 0.6232 Vali Acc: 0.3429
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.235 Vali Loss: 0.282
+Epoch: 3, | Train Acc: 0.6232 Vali Acc: 0.3429
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.235 Vali Loss: 0.305
+Epoch: 4, | Train Acc: 0.6232 Vali Acc: 0.3429
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.234 Vali Loss: 0.312
+Epoch: 5, | Train Acc: 0.6232 Vali Acc: 0.3429
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           23
+True 1            0           12
+
+Accuracy:0.342857
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 2/5
+Epoch: 1, | Train Loss: 0.250 Vali Loss: 0.244
+Epoch: 1, | Train Acc: 0.5362 Vali Acc: 0.6857
+Validation loss decreased (inf --> 0.243637).  Saving model ...
+Epoch: 2, | Train Loss: 0.250 Vali Loss: 0.244
+Epoch: 2, | Train Acc: 0.5362 Vali Acc: 0.6857
+Validation loss decreased (0.243637 --> 0.243602).  Saving model ...
+Epoch: 3, | Train Loss: 0.247 Vali Loss: 0.286
+Epoch: 3, | Train Acc: 0.5507 Vali Acc: 0.3143
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.247 Vali Loss: 0.239
+Epoch: 4, | Train Acc: 0.5652 Vali Acc: 0.5714
+Validation loss decreased (0.243602 --> 0.238913).  Saving model ...
+Epoch: 5, | Train Loss: 0.245 Vali Loss: 0.245
+Epoch: 5, | Train Acc: 0.5870 Vali Acc: 0.6571
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.246 Vali Loss: 0.244
+Epoch: 6, | Train Acc: 0.5797 Vali Acc: 0.6286
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.245 Vali Loss: 0.235
+Epoch: 7, | Train Acc: 0.5870 Vali Acc: 0.6571
+Validation loss decreased (0.238913 --> 0.234520).  Saving model ...
+Epoch: 8, | Train Loss: 0.243 Vali Loss: 0.239
+Epoch: 8, | Train Acc: 0.5870 Vali Acc: 0.6286
+EarlyStopping counter: 1 out of 4
+Epoch: 9, | Train Loss: 0.244 Vali Loss: 0.257
+Epoch: 9, | Train Acc: 0.5797 Vali Acc: 0.3714
+EarlyStopping counter: 2 out of 4
+Epoch: 10, | Train Loss: 0.244 Vali Loss: 0.248
+Epoch: 10, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 3 out of 4
+Epoch: 11, | Train Loss: 0.242 Vali Loss: 0.249
+Epoch: 11, | Train Acc: 0.6087 Vali Acc: 0.5143
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           11
+True 1            1           23
+
+Accuracy:0.657143
+acc_clas_0:0.000000
+acc_clas_1:0.958333
+Fold 3/5
+Epoch: 1, | Train Loss: 0.247 Vali Loss: 0.231
+Epoch: 1, | Train Acc: 0.5652 Vali Acc: 0.6857
+Validation loss decreased (inf --> 0.230702).  Saving model ...
+Epoch: 2, | Train Loss: 0.243 Vali Loss: 0.268
+Epoch: 2, | Train Acc: 0.5652 Vali Acc: 0.3714
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.244 Vali Loss: 0.266
+Epoch: 3, | Train Acc: 0.5652 Vali Acc: 0.3714
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.243 Vali Loss: 0.234
+Epoch: 4, | Train Acc: 0.5507 Vali Acc: 0.6286
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.243 Vali Loss: 0.235
+Epoch: 5, | Train Acc: 0.5580 Vali Acc: 0.6571
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            3           10
+True 1            1           21
+
+Accuracy:0.685714
+acc_clas_0:0.230769
+acc_clas_1:0.954545
+Fold 4/5
+Epoch: 1, | Train Loss: 0.246 Vali Loss: 0.316
+Epoch: 1, | Train Acc: 0.5468 Vali Acc: 0.3235
+Validation loss decreased (inf --> 0.316121).  Saving model ...
+Epoch: 2, | Train Loss: 0.248 Vali Loss: 0.453
+Epoch: 2, | Train Acc: 0.5396 Vali Acc: 0.3235
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.246 Vali Loss: 0.339
+Epoch: 3, | Train Acc: 0.5612 Vali Acc: 0.3235
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.247 Vali Loss: 0.264
+Epoch: 4, | Train Acc: 0.5540 Vali Acc: 0.3235
+Validation loss decreased (0.316121 --> 0.263930).  Saving model ...
+Epoch: 5, | Train Loss: 0.248 Vali Loss: 0.252
+Epoch: 5, | Train Acc: 0.5324 Vali Acc: 0.3235
+Validation loss decreased (0.263930 --> 0.251914).  Saving model ...
+Epoch: 6, | Train Loss: 0.248 Vali Loss: 0.250
+Epoch: 6, | Train Acc: 0.5468 Vali Acc: 0.4412
+Validation loss decreased (0.251914 --> 0.250320).  Saving model ...
+Epoch: 7, | Train Loss: 0.247 Vali Loss: 0.247
+Epoch: 7, | Train Acc: 0.5540 Vali Acc: 0.6765
+Validation loss decreased (0.250320 --> 0.247359).  Saving model ...
+Epoch: 8, | Train Loss: 0.245 Vali Loss: 0.259
+Epoch: 8, | Train Acc: 0.5612 Vali Acc: 0.4412
+EarlyStopping counter: 1 out of 4
+Epoch: 9, | Train Loss: 0.244 Vali Loss: 0.240
+Epoch: 9, | Train Acc: 0.5612 Vali Acc: 0.7059
+Validation loss decreased (0.247359 --> 0.239540).  Saving model ...
+Epoch: 10, | Train Loss: 0.241 Vali Loss: 0.230
+Epoch: 10, | Train Acc: 0.5683 Vali Acc: 0.6765
+Validation loss decreased (0.239540 --> 0.230418).  Saving model ...
+Epoch: 11, | Train Loss: 0.241 Vali Loss: 0.243
+Epoch: 11, | Train Acc: 0.5827 Vali Acc: 0.5588
+EarlyStopping counter: 1 out of 4
+Epoch: 12, | Train Loss: 0.242 Vali Loss: 0.241
+Epoch: 12, | Train Acc: 0.5755 Vali Acc: 0.6765
+EarlyStopping counter: 2 out of 4
+Epoch: 13, | Train Loss: 0.238 Vali Loss: 0.225
+Epoch: 13, | Train Acc: 0.5683 Vali Acc: 0.6765
+Validation loss decreased (0.230418 --> 0.224873).  Saving model ...
+Epoch: 14, | Train Loss: 0.237 Vali Loss: 0.243
+Epoch: 14, | Train Acc: 0.5971 Vali Acc: 0.6765
+EarlyStopping counter: 1 out of 4
+Epoch: 15, | Train Loss: 0.236 Vali Loss: 0.227
+Epoch: 15, | Train Acc: 0.5899 Vali Acc: 0.6765
+EarlyStopping counter: 2 out of 4
+Epoch: 16, | Train Loss: 0.238 Vali Loss: 0.259
+Epoch: 16, | Train Acc: 0.5899 Vali Acc: 0.3824
+EarlyStopping counter: 3 out of 4
+Epoch: 17, | Train Loss: 0.238 Vali Loss: 0.232
+Epoch: 17, | Train Acc: 0.5827 Vali Acc: 0.6765
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            1           10
+True 1            1           22
+
+Accuracy:0.676471
+acc_clas_0:0.090909
+acc_clas_1:0.956522
+Fold 5/5
+Epoch: 1, | Train Loss: 0.243 Vali Loss: 0.256
+Epoch: 1, | Train Acc: 0.5971 Vali Acc: 0.5000
+Validation loss decreased (inf --> 0.256188).  Saving model ...
+Epoch: 2, | Train Loss: 0.236 Vali Loss: 0.288
+Epoch: 2, | Train Acc: 0.6115 Vali Acc: 0.5000
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.236 Vali Loss: 0.273
+Epoch: 3, | Train Acc: 0.6043 Vali Acc: 0.5294
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.234 Vali Loss: 0.258
+Epoch: 4, | Train Acc: 0.6043 Vali Acc: 0.5000
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.232 Vali Loss: 0.272
+Epoch: 5, | Train Acc: 0.6043 Vali Acc: 0.5000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           17
+True 1            0           17
+
+Accuracy:0.500000
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+total avg vali acc:0.572437  total avg vali acc_clas_0: 0.064336  total avg vali acc_clas_1: 0.973880
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', devices='0,1', enc_mri='vit16', f_dim=128, finetune=True, gpu=0, l_dim=2, learning_rate=1e-05, model='CAA', num_folds=5, num_workers=1, patience=4, pretrain=True, root_dir='/data/yuguoqi/dataset/abide', temperature=1.0, train_epochs=24, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Number of parameters: 86.32M
+>>>>>>>start training : enc_mri_vit16_f_dim_128_temperature_1.0_pretrain_True_finetune_True>>>>>>>>>>>>>>>>>>>>>>>>>>
+Fold 1/5
+Epoch: 1, | Train Loss: 0.296 Vali Loss: 0.256
+Epoch: 1, | Train Acc: 0.5072 Vali Acc: 0.5143
+Validation loss decreased (inf --> 0.255968).  Saving model ...
+Epoch: 2, | Train Loss: 0.270 Vali Loss: 0.229
+Epoch: 2, | Train Acc: 0.5435 Vali Acc: 0.5714
+Validation loss decreased (0.255968 --> 0.229109).  Saving model ...
+Epoch: 3, | Train Loss: 0.273 Vali Loss: 0.252
+Epoch: 3, | Train Acc: 0.5652 Vali Acc: 0.4000
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.274 Vali Loss: 0.299
+Epoch: 4, | Train Acc: 0.4928 Vali Acc: 0.4857
+EarlyStopping counter: 2 out of 4
+Epoch: 5, | Train Loss: 0.266 Vali Loss: 0.249
+Epoch: 5, | Train Acc: 0.5072 Vali Acc: 0.4857
+EarlyStopping counter: 3 out of 4
+Epoch: 6, | Train Loss: 0.271 Vali Loss: 0.286
+Epoch: 6, | Train Acc: 0.6014 Vali Acc: 0.4857
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0           17            1
+True 1           14            3
+
+Accuracy:0.571429
+acc_clas_0:0.944444
+acc_clas_1:0.176471
+Fold 2/5
+Epoch: 1, | Train Loss: 0.274 Vali Loss: 0.280
+Epoch: 1, | Train Acc: 0.5580 Vali Acc: 0.5714
+Validation loss decreased (inf --> 0.279874).  Saving model ...
+Epoch: 2, | Train Loss: 0.250 Vali Loss: 0.259
+Epoch: 2, | Train Acc: 0.5435 Vali Acc: 0.5714
+Validation loss decreased (0.279874 --> 0.259279).  Saving model ...
+Epoch: 3, | Train Loss: 0.246 Vali Loss: 0.286
+Epoch: 3, | Train Acc: 0.5725 Vali Acc: 0.4286
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.277 Vali Loss: 0.240
+Epoch: 4, | Train Acc: 0.5145 Vali Acc: 0.5714
+Validation loss decreased (0.259279 --> 0.240017).  Saving model ...
+Epoch: 5, | Train Loss: 0.240 Vali Loss: 0.246
+Epoch: 5, | Train Acc: 0.5797 Vali Acc: 0.5714
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.254 Vali Loss: 0.240
+Epoch: 6, | Train Acc: 0.5870 Vali Acc: 0.5714
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.246 Vali Loss: 0.241
+Epoch: 7, | Train Acc: 0.5870 Vali Acc: 0.5714
+EarlyStopping counter: 3 out of 4
+Epoch: 8, | Train Loss: 0.245 Vali Loss: 0.266
+Epoch: 8, | Train Acc: 0.5362 Vali Acc: 0.5714
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           15
+True 1            0           20
+
+Accuracy:0.571429
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 3/5
+Epoch: 1, | Train Loss: 0.268 Vali Loss: 0.240
+Epoch: 1, | Train Acc: 0.5580 Vali Acc: 0.6571
+Validation loss decreased (inf --> 0.239523).  Saving model ...
+Epoch: 2, | Train Loss: 0.256 Vali Loss: 0.243
+Epoch: 2, | Train Acc: 0.5072 Vali Acc: 0.6571
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.247 Vali Loss: 0.227
+Epoch: 3, | Train Acc: 0.5435 Vali Acc: 0.6286
+Validation loss decreased (0.239523 --> 0.227192).  Saving model ...
+Epoch: 4, | Train Loss: 0.248 Vali Loss: 0.309
+Epoch: 4, | Train Acc: 0.5797 Vali Acc: 0.3429
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.268 Vali Loss: 0.203
+Epoch: 5, | Train Acc: 0.4565 Vali Acc: 0.6571
+Validation loss decreased (0.227192 --> 0.202655).  Saving model ...
+Epoch: 6, | Train Loss: 0.249 Vali Loss: 0.274
+Epoch: 6, | Train Acc: 0.5725 Vali Acc: 0.3429
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.266 Vali Loss: 0.228
+Epoch: 7, | Train Acc: 0.4928 Vali Acc: 0.6286
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.256 Vali Loss: 0.241
+Epoch: 8, | Train Acc: 0.5652 Vali Acc: 0.6286
+EarlyStopping counter: 3 out of 4
+Epoch: 9, | Train Loss: 0.242 Vali Loss: 0.267
+Epoch: 9, | Train Acc: 0.4855 Vali Acc: 0.5429
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           12
+True 1            0           23
+
+Accuracy:0.657143
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 4/5
+Epoch: 1, | Train Loss: 0.284 Vali Loss: 0.193
+Epoch: 1, | Train Acc: 0.4676 Vali Acc: 0.6471
+Validation loss decreased (inf --> 0.193435).  Saving model ...
+Epoch: 2, | Train Loss: 0.254 Vali Loss: 0.223
+Epoch: 2, | Train Acc: 0.5396 Vali Acc: 0.6765
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.246 Vali Loss: 0.235
+Epoch: 3, | Train Acc: 0.5827 Vali Acc: 0.6471
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.248 Vali Loss: 0.243
+Epoch: 4, | Train Acc: 0.5827 Vali Acc: 0.6471
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.245 Vali Loss: 0.240
+Epoch: 5, | Train Acc: 0.5036 Vali Acc: 0.6471
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            1           12
+True 1            0           21
+
+Accuracy:0.647059
+acc_clas_0:0.076923
+acc_clas_1:1.000000
+Fold 5/5
+Epoch: 1, | Train Loss: 0.258 Vali Loss: 0.224
+Epoch: 1, | Train Acc: 0.5827 Vali Acc: 0.5294
+Validation loss decreased (inf --> 0.224379).  Saving model ...
+Epoch: 2, | Train Loss: 0.245 Vali Loss: 0.218
+Epoch: 2, | Train Acc: 0.5899 Vali Acc: 0.5588
+Validation loss decreased (0.224379 --> 0.218194).  Saving model ...
+Epoch: 3, | Train Loss: 0.249 Vali Loss: 0.225
+Epoch: 3, | Train Acc: 0.5899 Vali Acc: 0.5294
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.238 Vali Loss: 0.282
+Epoch: 4, | Train Acc: 0.6115 Vali Acc: 0.5588
+EarlyStopping counter: 2 out of 4
+Epoch: 5, | Train Loss: 0.237 Vali Loss: 0.223
+Epoch: 5, | Train Acc: 0.6115 Vali Acc: 0.5588
+EarlyStopping counter: 3 out of 4
+Epoch: 6, | Train Loss: 0.257 Vali Loss: 0.246
+Epoch: 6, | Train Acc: 0.4101 Vali Acc: 0.5588
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            2           15
+True 1            0           17
+
+Accuracy:0.558824
+acc_clas_0:0.117647
+acc_clas_1:1.000000
+total avg vali acc:0.601176  total avg vali acc_clas_0: 0.227803  total avg vali acc_clas_1: 0.835294
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', devices='0,1', enc_mri='vit16', f_dim=128, finetune=False, gpu=0, l_dim=2, learning_rate=1e-05, model='CAA', num_folds=5, num_workers=1, patience=4, pretrain=True, root_dir='/data/yuguoqi/dataset/abide', temperature=1.0, train_epochs=24, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Number of parameters: 86.32M
+>>>>>>>start training : enc_mri_vit16_f_dim_128_temperature_1.0_pretrain_True_finetune_False>>>>>>>>>>>>>>>>>>>>>>>>>>
+Fold 1/5
+Epoch: 1, | Train Loss: 0.263 Vali Loss: 0.236
+Epoch: 1, | Train Acc: 0.5217 Vali Acc: 0.6857
+Validation loss decreased (inf --> 0.235623).  Saving model ...
+Epoch: 2, | Train Loss: 0.239 Vali Loss: 0.259
+Epoch: 2, | Train Acc: 0.5435 Vali Acc: 0.6000
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.232 Vali Loss: 0.245
+Epoch: 3, | Train Acc: 0.5870 Vali Acc: 0.6000
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.260 Vali Loss: 0.234
+Epoch: 4, | Train Acc: 0.5435 Vali Acc: 0.6286
+Validation loss decreased (0.235623 --> 0.234268).  Saving model ...
+Epoch: 5, | Train Loss: 0.252 Vali Loss: 0.243
+Epoch: 5, | Train Acc: 0.5580 Vali Acc: 0.6000
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.251 Vali Loss: 0.264
+Epoch: 6, | Train Acc: 0.4928 Vali Acc: 0.4857
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.247 Vali Loss: 0.266
+Epoch: 7, | Train Acc: 0.5507 Vali Acc: 0.6000
+EarlyStopping counter: 3 out of 4
+Epoch: 8, | Train Loss: 0.246 Vali Loss: 0.252
+Epoch: 8, | Train Acc: 0.5652 Vali Acc: 0.6000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            1           13
+True 1            0           21
+
+Accuracy:0.628571
+acc_clas_0:0.071429
+acc_clas_1:1.000000
+Fold 2/5
+Epoch: 1, | Train Loss: 0.271 Vali Loss: 0.251
+Epoch: 1, | Train Acc: 0.4493 Vali Acc: 0.6286
+Validation loss decreased (inf --> 0.250926).  Saving model ...
+Epoch: 2, | Train Loss: 0.253 Vali Loss: 0.250
+Epoch: 2, | Train Acc: 0.5000 Vali Acc: 0.4571
+Validation loss decreased (0.250926 --> 0.250214).  Saving model ...
+Epoch: 3, | Train Loss: 0.258 Vali Loss: 0.235
+Epoch: 3, | Train Acc: 0.4420 Vali Acc: 0.6571
+Validation loss decreased (0.250214 --> 0.234669).  Saving model ...
+Epoch: 4, | Train Loss: 0.254 Vali Loss: 0.236
+Epoch: 4, | Train Acc: 0.5362 Vali Acc: 0.6571
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.252 Vali Loss: 0.243
+Epoch: 5, | Train Acc: 0.5507 Vali Acc: 0.6286
+EarlyStopping counter: 2 out of 4
+Epoch: 6, | Train Loss: 0.258 Vali Loss: 0.239
+Epoch: 6, | Train Acc: 0.4130 Vali Acc: 0.6857
+EarlyStopping counter: 3 out of 4
+Epoch: 7, | Train Loss: 0.256 Vali Loss: 0.243
+Epoch: 7, | Train Acc: 0.5580 Vali Acc: 0.6571
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           12
+True 1            0           23
+
+Accuracy:0.657143
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 3/5
+Epoch: 1, | Train Loss: 0.265 Vali Loss: 0.248
+Epoch: 1, | Train Acc: 0.5217 Vali Acc: 0.6571
+Validation loss decreased (inf --> 0.248386).  Saving model ...
+Epoch: 2, | Train Loss: 0.244 Vali Loss: 0.245
+Epoch: 2, | Train Acc: 0.5797 Vali Acc: 0.5429
+Validation loss decreased (0.248386 --> 0.245189).  Saving model ...
+Epoch: 3, | Train Loss: 0.244 Vali Loss: 0.260
+Epoch: 3, | Train Acc: 0.5797 Vali Acc: 0.5429
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.242 Vali Loss: 0.262
+Epoch: 4, | Train Acc: 0.5942 Vali Acc: 0.5429
+EarlyStopping counter: 2 out of 4
+Epoch: 5, | Train Loss: 0.243 Vali Loss: 0.276
+Epoch: 5, | Train Acc: 0.6087 Vali Acc: 0.5429
+EarlyStopping counter: 3 out of 4
+Epoch: 6, | Train Loss: 0.242 Vali Loss: 0.257
+Epoch: 6, | Train Acc: 0.6087 Vali Acc: 0.5429
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           16
+True 1            0           19
+
+Accuracy:0.542857
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 4/5
+Epoch: 1, | Train Loss: 0.249 Vali Loss: 0.233
+Epoch: 1, | Train Acc: 0.5396 Vali Acc: 0.5294
+Validation loss decreased (inf --> 0.233166).  Saving model ...
+Epoch: 2, | Train Loss: 0.259 Vali Loss: 0.229
+Epoch: 2, | Train Acc: 0.5899 Vali Acc: 0.5000
+Validation loss decreased (0.233166 --> 0.229215).  Saving model ...
+Epoch: 3, | Train Loss: 0.245 Vali Loss: 0.246
+Epoch: 3, | Train Acc: 0.5827 Vali Acc: 0.5000
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.243 Vali Loss: 0.231
+Epoch: 4, | Train Acc: 0.5827 Vali Acc: 0.5000
+EarlyStopping counter: 2 out of 4
+Epoch: 5, | Train Loss: 0.247 Vali Loss: 0.231
+Epoch: 5, | Train Acc: 0.5827 Vali Acc: 0.5000
+EarlyStopping counter: 3 out of 4
+Epoch: 6, | Train Loss: 0.243 Vali Loss: 0.248
+Epoch: 6, | Train Acc: 0.5827 Vali Acc: 0.4706
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           17
+True 1            0           17
+
+Accuracy:0.500000
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 5/5
+Epoch: 1, | Train Loss: 0.255 Vali Loss: 0.256
+Epoch: 1, | Train Acc: 0.5612 Vali Acc: 0.4706
+Validation loss decreased (inf --> 0.255834).  Saving model ...
+Epoch: 2, | Train Loss: 0.246 Vali Loss: 0.255
+Epoch: 2, | Train Acc: 0.5683 Vali Acc: 0.5588
+Validation loss decreased (0.255834 --> 0.255201).  Saving model ...
+Epoch: 3, | Train Loss: 0.251 Vali Loss: 0.284
+Epoch: 3, | Train Acc: 0.4460 Vali Acc: 0.5588
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.249 Vali Loss: 0.300
+Epoch: 4, | Train Acc: 0.5971 Vali Acc: 0.5294
+EarlyStopping counter: 2 out of 4
+Epoch: 5, | Train Loss: 0.242 Vali Loss: 0.241
+Epoch: 5, | Train Acc: 0.5971 Vali Acc: 0.5588
+Validation loss decreased (0.255201 --> 0.241126).  Saving model ...
+Epoch: 6, | Train Loss: 0.248 Vali Loss: 0.253
+Epoch: 6, | Train Acc: 0.5899 Vali Acc: 0.5294
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.248 Vali Loss: 0.283
+Epoch: 7, | Train Acc: 0.5827 Vali Acc: 0.5294
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.244 Vali Loss: 0.245
+Epoch: 8, | Train Acc: 0.5755 Vali Acc: 0.5294
+EarlyStopping counter: 3 out of 4
+Epoch: 9, | Train Loss: 0.249 Vali Loss: 0.257
+Epoch: 9, | Train Acc: 0.5108 Vali Acc: 0.4412
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            1           15
+True 1            0           18
+
+Accuracy:0.558824
+acc_clas_0:0.062500
+acc_clas_1:1.000000
+total avg vali acc:0.577479  total avg vali acc_clas_0: 0.026786  total avg vali acc_clas_1: 1.000000
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', devices='0,1', enc_mri='vit16', f_dim=128, finetune=True, gpu=0, l_dim=2, learning_rate=1e-05, model='CAA', num_folds=5, num_workers=1, patience=4, pretrain=False, root_dir='/data/yuguoqi/dataset/abide', temperature=1.0, train_epochs=24, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Number of parameters: 86.32M
+>>>>>>>start training : enc_mri_vit16_f_dim_128_temperature_1.0_pretrain_False_finetune_True>>>>>>>>>>>>>>>>>>>>>>>>>>
+Fold 1/5
+Epoch: 1, | Train Loss: 0.262 Vali Loss: 0.255
+Epoch: 1, | Train Acc: 0.5870 Vali Acc: 0.4571
+Validation loss decreased (inf --> 0.255228).  Saving model ...
+Epoch: 2, | Train Loss: 0.245 Vali Loss: 0.391
+Epoch: 2, | Train Acc: 0.5652 Vali Acc: 0.5429
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.292 Vali Loss: 0.244
+Epoch: 3, | Train Acc: 0.5652 Vali Acc: 0.4571
+Validation loss decreased (0.255228 --> 0.243557).  Saving model ...
+Epoch: 4, | Train Loss: 0.242 Vali Loss: 0.275
+Epoch: 4, | Train Acc: 0.5507 Vali Acc: 0.5429
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.267 Vali Loss: 0.253
+Epoch: 5, | Train Acc: 0.5797 Vali Acc: 0.5429
+EarlyStopping counter: 2 out of 4
+Epoch: 6, | Train Loss: 0.272 Vali Loss: 0.292
+Epoch: 6, | Train Acc: 0.4275 Vali Acc: 0.5714
+EarlyStopping counter: 3 out of 4
+Epoch: 7, | Train Loss: 0.261 Vali Loss: 0.223
+Epoch: 7, | Train Acc: 0.5725 Vali Acc: 0.5714
+Validation loss decreased (0.243557 --> 0.223268).  Saving model ...
+Epoch: 8, | Train Loss: 0.258 Vali Loss: 0.243
+Epoch: 8, | Train Acc: 0.4493 Vali Acc: 0.5429
+EarlyStopping counter: 1 out of 4
+Epoch: 9, | Train Loss: 0.245 Vali Loss: 0.275
+Epoch: 9, | Train Acc: 0.5942 Vali Acc: 0.5429
+EarlyStopping counter: 2 out of 4
+Epoch: 10, | Train Loss: 0.242 Vali Loss: 0.252
+Epoch: 10, | Train Acc: 0.5797 Vali Acc: 0.5429
+EarlyStopping counter: 3 out of 4
+Epoch: 11, | Train Loss: 0.242 Vali Loss: 0.222
+Epoch: 11, | Train Acc: 0.5797 Vali Acc: 0.5429
+Validation loss decreased (0.223268 --> 0.221539).  Saving model ...
+Epoch: 12, | Train Loss: 0.247 Vali Loss: 0.242
+Epoch: 12, | Train Acc: 0.5870 Vali Acc: 0.5429
+EarlyStopping counter: 1 out of 4
+Epoch: 13, | Train Loss: 0.254 Vali Loss: 0.221
+Epoch: 13, | Train Acc: 0.4493 Vali Acc: 0.5429
+Validation loss decreased (0.221539 --> 0.221378).  Saving model ...
+Epoch: 14, | Train Loss: 0.242 Vali Loss: 0.263
+Epoch: 14, | Train Acc: 0.6014 Vali Acc: 0.5714
+EarlyStopping counter: 1 out of 4
+Epoch: 15, | Train Loss: 0.256 Vali Loss: 0.237
+Epoch: 15, | Train Acc: 0.4275 Vali Acc: 0.5714
+EarlyStopping counter: 2 out of 4
+Epoch: 16, | Train Loss: 0.261 Vali Loss: 0.250
+Epoch: 16, | Train Acc: 0.5942 Vali Acc: 0.5714
+EarlyStopping counter: 3 out of 4
+Epoch: 17, | Train Loss: 0.246 Vali Loss: 0.252
+Epoch: 17, | Train Acc: 0.5435 Vali Acc: 0.4571
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            1           15
+True 1            1           18
+
+Accuracy:0.542857
+acc_clas_0:0.062500
+acc_clas_1:0.947368
+Fold 2/5
+Epoch: 1, | Train Loss: 0.261 Vali Loss: 0.252
+Epoch: 1, | Train Acc: 0.5507 Vali Acc: 0.5714
+Validation loss decreased (inf --> 0.251644).  Saving model ...
+Epoch: 2, | Train Loss: 0.238 Vali Loss: 0.269
+Epoch: 2, | Train Acc: 0.5725 Vali Acc: 0.3714
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.247 Vali Loss: 0.236
+Epoch: 3, | Train Acc: 0.5145 Vali Acc: 0.6286
+Validation loss decreased (0.251644 --> 0.236080).  Saving model ...
+Epoch: 4, | Train Loss: 0.245 Vali Loss: 0.240
+Epoch: 4, | Train Acc: 0.5725 Vali Acc: 0.5714
+EarlyStopping counter: 1 out of 4
+Epoch: 5, | Train Loss: 0.238 Vali Loss: 0.239
+Epoch: 5, | Train Acc: 0.5797 Vali Acc: 0.6000
+EarlyStopping counter: 2 out of 4
+Epoch: 6, | Train Loss: 0.237 Vali Loss: 0.277
+Epoch: 6, | Train Acc: 0.5725 Vali Acc: 0.6000
+EarlyStopping counter: 3 out of 4
+Epoch: 7, | Train Loss: 0.236 Vali Loss: 0.251
+Epoch: 7, | Train Acc: 0.5870 Vali Acc: 0.6000
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           13
+True 1            0           22
+
+Accuracy:0.628571
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 3/5
+Epoch: 1, | Train Loss: 0.253 Vali Loss: 0.266
+Epoch: 1, | Train Acc: 0.5942 Vali Acc: 0.4857
+Validation loss decreased (inf --> 0.266159).  Saving model ...
+Epoch: 2, | Train Loss: 0.247 Vali Loss: 0.281
+Epoch: 2, | Train Acc: 0.5072 Vali Acc: 0.4857
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.259 Vali Loss: 0.275
+Epoch: 3, | Train Acc: 0.5942 Vali Acc: 0.4857
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.255 Vali Loss: 0.252
+Epoch: 4, | Train Acc: 0.4348 Vali Acc: 0.4857
+Validation loss decreased (0.266159 --> 0.251514).  Saving model ...
+Epoch: 5, | Train Loss: 0.246 Vali Loss: 0.277
+Epoch: 5, | Train Acc: 0.6014 Vali Acc: 0.5143
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.240 Vali Loss: 0.258
+Epoch: 6, | Train Acc: 0.5942 Vali Acc: 0.4857
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.239 Vali Loss: 0.284
+Epoch: 7, | Train Acc: 0.5942 Vali Acc: 0.4857
+EarlyStopping counter: 3 out of 4
+Epoch: 8, | Train Loss: 0.241 Vali Loss: 0.253
+Epoch: 8, | Train Acc: 0.5942 Vali Acc: 0.5143
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           17
+True 1            1           17
+
+Accuracy:0.485714
+acc_clas_0:0.000000
+acc_clas_1:0.944444
+Fold 4/5
+Epoch: 1, | Train Loss: 0.273 Vali Loss: 0.266
+Epoch: 1, | Train Acc: 0.5612 Vali Acc: 0.5882
+Validation loss decreased (inf --> 0.266191).  Saving model ...
+Epoch: 2, | Train Loss: 0.248 Vali Loss: 0.243
+Epoch: 2, | Train Acc: 0.5108 Vali Acc: 0.4706
+Validation loss decreased (0.266191 --> 0.243363).  Saving model ...
+Epoch: 3, | Train Loss: 0.244 Vali Loss: 0.260
+Epoch: 3, | Train Acc: 0.5540 Vali Acc: 0.5294
+EarlyStopping counter: 1 out of 4
+Epoch: 4, | Train Loss: 0.252 Vali Loss: 0.226
+Epoch: 4, | Train Acc: 0.5755 Vali Acc: 0.5294
+Validation loss decreased (0.243363 --> 0.225974).  Saving model ...
+Epoch: 5, | Train Loss: 0.247 Vali Loss: 0.227
+Epoch: 5, | Train Acc: 0.5755 Vali Acc: 0.5588
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.246 Vali Loss: 0.227
+Epoch: 6, | Train Acc: 0.5827 Vali Acc: 0.5882
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.248 Vali Loss: 0.253
+Epoch: 7, | Train Acc: 0.5755 Vali Acc: 0.5588
+EarlyStopping counter: 3 out of 4
+Epoch: 8, | Train Loss: 0.259 Vali Loss: 0.225
+Epoch: 8, | Train Acc: 0.4317 Vali Acc: 0.5882
+Validation loss decreased (0.225974 --> 0.225014).  Saving model ...
+Epoch: 9, | Train Loss: 0.245 Vali Loss: 0.220
+Epoch: 9, | Train Acc: 0.5755 Vali Acc: 0.5882
+Validation loss decreased (0.225014 --> 0.220075).  Saving model ...
+Epoch: 10, | Train Loss: 0.246 Vali Loss: 0.224
+Epoch: 10, | Train Acc: 0.5755 Vali Acc: 0.5882
+EarlyStopping counter: 1 out of 4
+Epoch: 11, | Train Loss: 0.246 Vali Loss: 0.244
+Epoch: 11, | Train Acc: 0.5683 Vali Acc: 0.5882
+EarlyStopping counter: 2 out of 4
+Epoch: 12, | Train Loss: 0.244 Vali Loss: 0.282
+Epoch: 12, | Train Acc: 0.5827 Vali Acc: 0.5882
+EarlyStopping counter: 3 out of 4
+Epoch: 13, | Train Loss: 0.243 Vali Loss: 0.242
+Epoch: 13, | Train Acc: 0.5899 Vali Acc: 0.5882
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            2           14
+True 1            0           18
+
+Accuracy:0.588235
+acc_clas_0:0.125000
+acc_clas_1:1.000000
+Fold 5/5
+Epoch: 1, | Train Loss: 0.265 Vali Loss: 0.204
+Epoch: 1, | Train Acc: 0.4317 Vali Acc: 0.6176
+Validation loss decreased (inf --> 0.203530).  Saving model ...
+Epoch: 2, | Train Loss: 0.249 Vali Loss: 0.238
+Epoch: 2, | Train Acc: 0.5683 Vali Acc: 0.6765
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.255 Vali Loss: 0.245
+Epoch: 3, | Train Acc: 0.4388 Vali Acc: 0.6765
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.252 Vali Loss: 0.280
+Epoch: 4, | Train Acc: 0.5612 Vali Acc: 0.6176
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.247 Vali Loss: 0.244
+Epoch: 5, | Train Acc: 0.5683 Vali Acc: 0.6765
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           13
+True 1            0           21
+
+Accuracy:0.617647
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+total avg vali acc:0.572605  total avg vali acc_clas_0: 0.037500  total avg vali acc_clas_1: 0.978363
+Args in experiment:
+Namespace(batch_size=16, checkpoints='./checkpoints/', devices='0,1', enc_mri='vit16', f_dim=128, finetune=False, gpu=0, l_dim=2, learning_rate=1e-05, model='CAA', num_folds=5, num_workers=1, patience=4, pretrain=False, root_dir='/data/yuguoqi/dataset/abide', temperature=1.0, train_epochs=24, use_amp=True, use_gpu=True, use_multi_gpu=False)
+Use GPU: cuda:0
+Number of parameters: 86.32M
+>>>>>>>start training : enc_mri_vit16_f_dim_128_temperature_1.0_pretrain_False_finetune_False>>>>>>>>>>>>>>>>>>>>>>>>>>
+Fold 1/5
+Epoch: 1, | Train Loss: 0.257 Vali Loss: 0.248
+Epoch: 1, | Train Acc: 0.4638 Vali Acc: 0.5143
+Validation loss decreased (inf --> 0.247519).  Saving model ...
+Epoch: 2, | Train Loss: 0.243 Vali Loss: 0.248
+Epoch: 2, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.246 Vali Loss: 0.250
+Epoch: 3, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.243 Vali Loss: 0.248
+Epoch: 4, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.242 Vali Loss: 0.248
+Epoch: 5, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           17
+True 1            0           18
+
+Accuracy:0.514286
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 2/5
+Epoch: 1, | Train Loss: 0.251 Vali Loss: 0.249
+Epoch: 1, | Train Acc: 0.5072 Vali Acc: 0.5143
+Validation loss decreased (inf --> 0.249087).  Saving model ...
+Epoch: 2, | Train Loss: 0.244 Vali Loss: 0.277
+Epoch: 2, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.244 Vali Loss: 0.234
+Epoch: 3, | Train Acc: 0.5797 Vali Acc: 0.5143
+Validation loss decreased (0.249087 --> 0.233846).  Saving model ...
+Epoch: 4, | Train Loss: 0.243 Vali Loss: 0.233
+Epoch: 4, | Train Acc: 0.5797 Vali Acc: 0.5143
+Validation loss decreased (0.233846 --> 0.232934).  Saving model ...
+Epoch: 5, | Train Loss: 0.245 Vali Loss: 0.249
+Epoch: 5, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.244 Vali Loss: 0.262
+Epoch: 6, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.245 Vali Loss: 0.258
+Epoch: 7, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 3 out of 4
+Epoch: 8, | Train Loss: 0.243 Vali Loss: 0.270
+Epoch: 8, | Train Acc: 0.5797 Vali Acc: 0.5143
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           17
+True 1            0           18
+
+Accuracy:0.514286
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 3/5
+Epoch: 1, | Train Loss: 0.257 Vali Loss: 0.251
+Epoch: 1, | Train Acc: 0.5507 Vali Acc: 0.6286
+Validation loss decreased (inf --> 0.251207).  Saving model ...
+Epoch: 2, | Train Loss: 0.251 Vali Loss: 0.244
+Epoch: 2, | Train Acc: 0.5507 Vali Acc: 0.6286
+Validation loss decreased (0.251207 --> 0.244311).  Saving model ...
+Epoch: 3, | Train Loss: 0.249 Vali Loss: 0.238
+Epoch: 3, | Train Acc: 0.5507 Vali Acc: 0.6286
+Validation loss decreased (0.244311 --> 0.237746).  Saving model ...
+Epoch: 4, | Train Loss: 0.247 Vali Loss: 0.234
+Epoch: 4, | Train Acc: 0.5507 Vali Acc: 0.6286
+Validation loss decreased (0.237746 --> 0.234108).  Saving model ...
+Epoch: 5, | Train Loss: 0.249 Vali Loss: 0.237
+Epoch: 5, | Train Acc: 0.5507 Vali Acc: 0.6286
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.248 Vali Loss: 0.237
+Epoch: 6, | Train Acc: 0.5507 Vali Acc: 0.6286
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.248 Vali Loss: 0.233
+Epoch: 7, | Train Acc: 0.5507 Vali Acc: 0.6286
+Validation loss decreased (0.234108 --> 0.232674).  Saving model ...
+Epoch: 8, | Train Loss: 0.247 Vali Loss: 0.240
+Epoch: 8, | Train Acc: 0.5507 Vali Acc: 0.6286
+EarlyStopping counter: 1 out of 4
+Epoch: 9, | Train Loss: 0.247 Vali Loss: 0.248
+Epoch: 9, | Train Acc: 0.5507 Vali Acc: 0.6286
+EarlyStopping counter: 2 out of 4
+Epoch: 10, | Train Loss: 0.247 Vali Loss: 0.248
+Epoch: 10, | Train Acc: 0.5507 Vali Acc: 0.6286
+EarlyStopping counter: 3 out of 4
+Epoch: 11, | Train Loss: 0.248 Vali Loss: 0.248
+Epoch: 11, | Train Acc: 0.5507 Vali Acc: 0.6286
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           13
+True 1            0           22
+
+Accuracy:0.628571
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 4/5
+Epoch: 1, | Train Loss: 0.253 Vali Loss: 0.245
+Epoch: 1, | Train Acc: 0.5612 Vali Acc: 0.5882
+Validation loss decreased (inf --> 0.244672).  Saving model ...
+Epoch: 2, | Train Loss: 0.247 Vali Loss: 0.246
+Epoch: 2, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.246 Vali Loss: 0.246
+Epoch: 3, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.247 Vali Loss: 0.264
+Epoch: 4, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 3 out of 4
+Epoch: 5, | Train Loss: 0.246 Vali Loss: 0.230
+Epoch: 5, | Train Acc: 0.5612 Vali Acc: 0.5882
+Validation loss decreased (0.244672 --> 0.229900).  Saving model ...
+Epoch: 6, | Train Loss: 0.246 Vali Loss: 0.246
+Epoch: 6, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 1 out of 4
+Epoch: 7, | Train Loss: 0.247 Vali Loss: 0.246
+Epoch: 7, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 2 out of 4
+Epoch: 8, | Train Loss: 0.248 Vali Loss: 0.246
+Epoch: 8, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 3 out of 4
+Epoch: 9, | Train Loss: 0.246 Vali Loss: 0.246
+Epoch: 9, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           14
+True 1            0           20
+
+Accuracy:0.588235
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+Fold 5/5
+Epoch: 1, | Train Loss: 0.247 Vali Loss: 0.246
+Epoch: 1, | Train Acc: 0.5612 Vali Acc: 0.5882
+Validation loss decreased (inf --> 0.245571).  Saving model ...
+Epoch: 2, | Train Loss: 0.246 Vali Loss: 0.246
+Epoch: 2, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 1 out of 4
+Epoch: 3, | Train Loss: 0.247 Vali Loss: 0.246
+Epoch: 3, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 2 out of 4
+Epoch: 4, | Train Loss: 0.248 Vali Loss: 0.226
+Epoch: 4, | Train Acc: 0.5612 Vali Acc: 0.5882
+Validation loss decreased (0.245571 --> 0.225789).  Saving model ...
+Epoch: 5, | Train Loss: 0.247 Vali Loss: 0.246
+Epoch: 5, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 1 out of 4
+Epoch: 6, | Train Loss: 0.248 Vali Loss: 0.229
+Epoch: 6, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 2 out of 4
+Epoch: 7, | Train Loss: 0.246 Vali Loss: 0.257
+Epoch: 7, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 3 out of 4
+Epoch: 8, | Train Loss: 0.246 Vali Loss: 0.264
+Epoch: 8, | Train Acc: 0.5612 Vali Acc: 0.5882
+EarlyStopping counter: 4 out of 4
+Early stopping
+Confusion Matrix:
+        Predicted 0  Predicted 1
+True 0            0           14
+True 1            0           20
+
+Accuracy:0.588235
+acc_clas_0:0.000000
+acc_clas_1:1.000000
+total avg vali acc:0.566723  total avg vali acc_clas_0: 0.000000  total avg vali acc_clas_1: 1.000000
