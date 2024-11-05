@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 
 ## Step 2
-Download  [[Dataset]]([https://arxiv.org/abs/2402.19072](https://drive.google.com/drive/folders/1GM2t1mnCOYEKuoIzptuVJKqtdOYevYg8?usp=drive_link)). Then place the downloaded data in the folder`./abide`.
+Download  [Dataset]([https://arxiv.org/abs/2402.19072](https://drive.google.com/drive/folders/1GM2t1mnCOYEKuoIzptuVJKqtdOYevYg8?usp=drive_link)). Then place the downloaded data in the folder`./abide`.
 
 To give an example, the path of *label.csv* should appear like **./abide/label.csv**
 
